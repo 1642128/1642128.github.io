@@ -26,7 +26,7 @@
             var win = window.open();
             var backbutton = win.document.createElement('button');
             backbutton.value = "Back";
-            backbutton.onclick = "location.href='javascript:window.history.back();';"
+            backbutton.onclick = "history.back()"
             win.document.body.appendChild(backbutton);
             var url = "1642128.github.io";
             var iframe = win.document.createElement('iframe');
