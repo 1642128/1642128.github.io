@@ -25,7 +25,7 @@
             function AB() {
             var win = window.open();
             var backbutton = win.document.createElement('button');
-            backbutton.value = "Back";
+            backbutton.name = "Back";
             backbutton.onclick = "history.back()"
             win.document.body.appendChild(backbutton);
             var url = "1642128.github.io";
