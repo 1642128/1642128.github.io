@@ -26,16 +26,16 @@
             function AB() {
             var win = window.open();
             var url = "1642128.github.io";
-            var backbutton = win.document.createElement('button');
-            backbutton.innerHTML = "Back";
-            document.getElementById("backbutton").addEventListener("click", function () {iframe.src = iframe.origin;})
-            win.document.body.appendChild(backbutton);
             var iframe = win.document.createElement('iframe');
             iframe.style.width = "100%";
             iframe.style.height = "100%";
             iframe.style.border = "none";
             iframe.src = url;
             win.document.body.appendChild(iframe);
+            var backbutton = win.document.createElement('button');
+            backbutton.innerHTML = "Back";
+            document.getElementById("backbutton").addEventListener("click", function () {iframe.src = iframe.origin;})
+            win.document.body.appendChild(backbutton);
             win.document.title = "Home | Schoology";
             var link = win.document.createElement('link');
             link.rel = "icon";
