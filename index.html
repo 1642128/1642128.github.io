@@ -28,7 +28,7 @@
             var url = "1642128.github.io";
             var backbutton = win.document.createElement('button');
             backbutton.innerHTML = "Back";
-            document.getElementById("backbutton").addEventListener("click", function () {iframe.href = iframe.origin;})
+            document.getElementById("backbutton").addEventListener("click", function () {iframe.src = iframe.origin;})
             win.document.body.appendChild(backbutton);
             var iframe = win.document.createElement('iframe');
             iframe.style.width = "100%";
@@ -42,7 +42,6 @@
             link.type = "image/png";
             link.href = "https://lh3.googleusercontent.com/d/1BWSyGUQYbEVsyKu6LMznePHwOeojuP-C";
             win.document.head.appendChild(link);
-            return false
             }
         </script>
     </body>
