@@ -30,11 +30,11 @@
             iframe.style.width = "100%";
             iframe.style.height = "90%";
             iframe.style.border = "none";
-            iframe.top = 60
             iframe.src = url;
             win.document.body.appendChild(iframe);
             var backbutton = win.document.createElement('button');
             backbutton.innerHTML = "Back";
+            backbutton.top = "90%";
             document.getElementById("backbutton").addEventListener("click", function () {iframe.src = iframe.origin;})
             win.document.body.appendChild(backbutton);
             win.document.title = "Home | Schoology";
