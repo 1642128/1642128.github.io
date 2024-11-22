@@ -31,11 +31,11 @@
             iframe.style.height = "100%";
             iframe.style.border = "none";
             iframe.src = url;
+            win.document.body.appendChild(iframe);
             var backbutton = win.document.createElement('button');
             backbutton.innerHTML = "Back";
             document.getElementById("backbutton").addEventListener("click", function () {iframe.href = iframe.origin;})
             win.document.body.appendChild(backbutton);
-            win.document.body.appendChild(iframe);
             win.document.title = "Home | Schoology";
             var link = win.document.createElement('link');
             link.rel = "icon";
