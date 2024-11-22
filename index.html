@@ -24,6 +24,10 @@
         <script>
             function AB() {
             var win = window.open();
+            var backbutton = win.document.createElement('button');
+            backbutton.value = "Back";
+            backbutton.href = "javascript:window.history.back();";
+            win.document.body.appendChild(backbutton);
             var url = "1642128.github.io";
             var iframe = win.document.createElement('iframe');
             iframe.style.width = "100%";
